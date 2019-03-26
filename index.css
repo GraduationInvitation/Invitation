@@ -13,9 +13,9 @@ a.my-btn:hover
 @media (max-width: 600px)
 {
    img {
-        margin: auto;
-        width: 65%;
-        height: 50%;
+       max-width: 100%;
+        
+        height: auto;
     }
 
 }
