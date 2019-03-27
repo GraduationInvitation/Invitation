@@ -1,69 +1,94 @@
-body {
-    background-color: rosybrown;
-}
-.flip-box {
+
+
+.flip-container{
     background-color: transparent;
-    margin: auto;
-    width: 100%;
-    height: 100%;
+    
+   
     border: 1px solid white;
-    perspective: 1000px; /*3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width:100%;
-    height: 100%;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-box-front {
-    background-color:white;
-    color: white;
-  }
-  
-  /* Style the back side */
-  .flip-box-back {
-    background-color:white;
-    color: white;
-    transform: rotateY(180deg);
-  } 
-  
-  @media (max-width: 600px)
+    /*perspective*/
+    -webkit-perspective:1000;
+    -moz-perspective:1000;
+    -ms-perspective:1000;
+    -o-perspective:1000;
+     perspective:1000;
+    
+}
+    /* flip the pane when hovered */
+.flipped {
+    /*transform*/
+         -webkit-transform:rotateY(180deg);
+         -moz-transform:rotateY(180deg);
+         -ms-transform:rotateY(180deg);
+         -o-transform:rotateY(180deg);
+          transform:rotateY(180deg);
+}
+.flip-container, .front, .back{
+        width:100%;
+        height:100%;
+        
+}
+
+    /* flip speed */
+.flipper {
+        /*transition*/
+        -webkit-transition:0.6s;
+        -moz-transition:0.6s;
+        -o-transition:0.6s;
+        transition:0.6s;
+         /*transform-style*/
+        -webkit-transform-style:preserve-3d;
+        -moz-transform-style:preserve-3d;
+        -ms-transform-style:preserve-3d;
+        -o-transform-style:preserve-3d;
+        transform-style:preserve-3d;
+        
+}
+    /* hide back of pane during swap */
+.front, .back{
+        /*backface-visibility*/
+        -webkit-backface-visibility:hidden;
+        -moz-backface-visibility:hidden;
+        -ms-backface-visibility:hidden;
+        -o-backface-visibility:hidden;
+        backface-visibility:hidden;
+        position: absolute;
+        /*
+       
+        top:0;
+        left:0; */
+}
+    /* front pane, placed above back */
+.front{
+         z-index:2;
+}
+    /* back, initially hidden pane */
+.back{
+        /*transform*/
+        -webkit-transform:rotateY(180deg);
+        -moz-transform:rotateY(180deg);
+        -ms-transform:rotateY(180deg);
+        -o-transform:rotateY(180deg);
+        transform:rotateY(180deg);
+}
+
+/* mobile version */
+@media (max-width: 600px)
   {
    img {
-       max-width: 100%;
-        
+        max-width: 100%;
         height: auto;
     }
 
-  }
+}
 
-  .footer {
-    position: fixed;
+/* button placement */
+.footer {
+    position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 2em;
-    text-align: right;
+   
     color: white; 
      
 }
