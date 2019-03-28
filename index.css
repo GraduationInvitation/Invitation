@@ -84,6 +84,8 @@ img {
     -o-transform: rotateX(108deg);
     -moz-transform: rotateY(100deg);
     -moz-transform: rotateX(108deg);
+    position: fixed;
+    top: 0;
     color:  rgb(205,175,149);
     font-size: 40px;
     margin-left: 160px;
