@@ -78,7 +78,7 @@ img {
 .fa.fa-refresh {
    
     transform: rotateX(108deg);
-   
+    z-index: 3;
     position: fixed;
     top: 0;
     color:  rgb(205,175,149);
