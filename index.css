@@ -77,15 +77,13 @@ img {
 /* arrow spin */
 
 .fa.fa-refresh {
-    transform: rotateX(108deg);
+    transform: rotateX(113deg);
     position: absolute;
     left: 45%;
     top: 0;
     color:  rgb(205,175,149);
     font-size: 40px;
-   
-    
-
+    z-index: 3;
 }
 
 /* automatic flip */
