@@ -57,13 +57,12 @@ body, head {
        
 }
     /* front pane, placed above back */
-.back{
+.front{
          z-index:2;
 }
     /* back, initially hidden pane */
-.front{
+.back{
         /*transform*/
-        animation-delay: 5s;
         -webkit-transform:rotateY(180deg);
         -moz-transform:rotateY(180deg);
         -ms-transform:rotateY(180deg);
@@ -74,28 +73,28 @@ body, head {
 /* automatic flip */
 
 .autoFlip {
-   
-    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-duration: 2s;
 	animation-name: flippy;
 }
 
 @keyframes flippy {
-
-    0% 
-    {
-        -webkit-transform: rotateY(180deg);
-        -o-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);
-        transform: rotateY(180deg);  
-    }
-   
-  
-    100% {
+    0% {
         -webkit-transform: rotateY(0deg);
         -o-transform: rotateY(0deg);
         -moz-transform: rotateY(0deg);
         transform: rotateY(0deg);
     }
+
+    100% 
+    {
+        -webkit-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        transform: rotateY(180deg);  
+
+    }
+    
 }
 
 
