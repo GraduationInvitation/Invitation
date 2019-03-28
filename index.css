@@ -2,10 +2,8 @@ body, head {
     background-color: rgb(235,232,228);
 }
 
-img 
-{ 
- padding: 1em;
-
+img {
+    padding: 1em;
 }
 .flip-container{
     width:100%;
@@ -62,13 +60,13 @@ img
        
 }
     /* front pane, placed above back */
-.front{
+.back{
          z-index:2;
          
          
 }
     /* back, initially hidden pane */
-.back{
+.front{
         /*transform*/
         -webkit-transform:rotateY(180deg);
         -moz-transform:rotateY(180deg);
@@ -77,11 +75,42 @@ img
         transform:rotateY(180deg);
 }
 
+/* automatic flip */
+
+.autoFlip {
+   
+    animation: flippy 7s ;  
+        
+}
+
+
+@keyframes flippy {
+    100% {
+        -webkit-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+
+    0% 
+    {
+        -webkit-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        transform: rotateY(180deg);  
+        
+
+    }
+    
+}
+
+
 /* mobile version */
 @media (max-width: 600px)
   {
    img {
         max-width: 100%;
+        padding: 1em;
         margin-left: auto;
         margin-right: auto;
         height: auto;
