@@ -78,12 +78,12 @@ img {
 .fa.fa-refresh {
    
     transform: rotateX(108deg);
-    z-index: 6;
-    position: fixed;
+    position: absolute;
+    left: 45%;
     top: 0;
     color:  rgb(205,175,149);
     font-size: 40px;
-    margin-left: 160px;
+    
 
 }
 
