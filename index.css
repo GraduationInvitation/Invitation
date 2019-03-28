@@ -82,8 +82,8 @@ img {
     transform: rotateX(108deg);
     color: rgb(139,119,101);
     font-size: 40px;
-    margin-left: 200px;
-    z-index: -2;
+    margin-left: 180px;
+    z-index: -1;
 
 }
 
