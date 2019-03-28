@@ -63,6 +63,7 @@ body, head {
     /* back, initially hidden pane */
 .front{
         /*transform*/
+        animation-delay: 5s;
         -webkit-transform:rotateY(180deg);
         -moz-transform:rotateY(180deg);
         -ms-transform:rotateY(180deg);
@@ -74,7 +75,7 @@ body, head {
 
 .autoFlip {
    
-    animation-duration: 2s;
+    animation-duration: 4s;
 	animation-name: flippy;
 }
 
@@ -87,6 +88,8 @@ body, head {
         -moz-transform: rotateY(180deg);
         transform: rotateY(180deg);  
     }
+   
+  
     100% {
         -webkit-transform: rotateY(0deg);
         -o-transform: rotateY(0deg);
