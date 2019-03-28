@@ -76,7 +76,7 @@ img {
 /* arrow spin */
 
 .fa.fa-refresh {
-    transform: rotateY(70deg);
+    transform: rotateY(100deg);
     transform: rotateX(108deg);
     -webkit-transform: rotateY(100deg);
     -webkit-transform: rotateX(108deg);
@@ -87,8 +87,7 @@ img {
     color:  rgb(205,175,149);
     font-size: 40px;
     margin-left: 160px;
-    z-index: 3;
- 
+   
 }
 
 /* automatic flip */
