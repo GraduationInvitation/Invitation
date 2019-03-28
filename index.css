@@ -80,11 +80,17 @@ img {
 .fa.fa-refresh {
     transform: rotateY(100deg);
     transform: rotateX(108deg);
+    -webkit-transform: rotateY(100deg);
+    -webkit-transform: rotateX(108deg);
+    -o-transform: rotateY(100deg);
+    -o-transform: rotateX(108deg);
+    -moz-transform: rotateY(100deg);
+    -moz-transform: rotateX(108deg);
     color:  rgb(205,175,149);
     font-size: 40px;
     margin-left: 180px;
     position: relative;
-    display: block;
+ 
 }
 
 /* automatic flip */
