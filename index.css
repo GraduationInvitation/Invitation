@@ -1,7 +1,11 @@
-
+body, head {
+    background-color: rgb(235,232,228);
+}
 .flip-container{
     width:100%;
     height: 100%;
+    margin: auto;
+    border: 7em;
     /*perspective*/
     -webkit-perspective:1000;
     -moz-perspective:1000;
@@ -53,11 +57,11 @@
        
 }
     /* front pane, placed above back */
-.front{
+.back{
          z-index:2;
 }
     /* back, initially hidden pane */
-.back{
+.front{
         /*transform*/
         -webkit-transform:rotateY(180deg);
         -moz-transform:rotateY(180deg);
@@ -69,28 +73,26 @@
 /* automatic flip */
 
 .autoFlip {
-    animation-delay: 2s;
+   
     animation-duration: 2s;
 	animation-name: flippy;
 }
 
 @keyframes flippy {
-    0% {
+
+    0% 
+    {
+        -webkit-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        transform: rotateY(180deg);  
+    }
+    100% {
         -webkit-transform: rotateY(0deg);
         -o-transform: rotateY(0deg);
         -moz-transform: rotateY(0deg);
         transform: rotateY(0deg);
     }
-
-    100%
-    {
-        -webkit-transform: rotateY(180deg) scale(1);
-        -o-transform: rotateY(180deg) scale(1);
-        -moz-transform: rotateY(180deg) scale(1);
-        transform: rotateY(180deg) scale(1);  
-    }
-        
-	
 }
 
 
@@ -123,6 +125,7 @@
     color: white; 
      
 }
+
 a.my-btn {
    background-color: rgb(139,119,101);
    color: white; 
