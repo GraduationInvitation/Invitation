@@ -61,9 +61,7 @@ img {
 }
     /* front pane, placed above back */
 .back{
-         z-index:2;
-         
-         
+         z-index:2;        
 }
     /* back, initially hidden pane */
 .front{
@@ -78,7 +76,7 @@ img {
 /* arrow spin */
 
 .fa.fa-refresh {
-    transform: rotateY(100deg);
+    transform: rotateY(70deg);
     transform: rotateX(108deg);
     -webkit-transform: rotateY(100deg);
     -webkit-transform: rotateX(108deg);
@@ -94,7 +92,6 @@ img {
 }
 
 /* automatic flip */
-
 .autoFlip {
    
     animation: flippy 9s ;
@@ -103,7 +100,6 @@ img {
     -moz-animation: flippy 9s;
         
 }
-
 
 @keyframes flippy {
   
@@ -124,7 +120,6 @@ img {
     }
     
 }
-
 
 /* mobile version */
 @media (max-width: 600px)
