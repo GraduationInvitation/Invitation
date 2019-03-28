@@ -75,31 +75,46 @@ img {
         transform:rotateY(180deg);
 }
 
+/* arrow spin */
+
+.fa.fa-refresh {
+    transform: rotateY(100deg);
+    transform: rotateX(108deg);
+    color: rgb(139,119,101);
+    font-size: 40px;
+    margin-left: 200px;
+    z-index: -2;
+
+}
+
 /* automatic flip */
 
 .autoFlip {
    
-    animation: flippy 7s ;  
+    animation: flippy 9s ;
+    -webkit-animation: flippy 9s;  
+    -o-animation: flippy 9s;
+    -moz-animation: flippy 9s;
         
 }
 
 
 @keyframes flippy {
-    100% {
-        -webkit-transform: rotateY(0deg);
-        -o-transform: rotateY(0deg);
-        -moz-transform: rotateY(0deg);
-        transform: rotateY(0deg);
-    }
-
+  
     0% 
     {
         -webkit-transform: rotateY(180deg);
         -o-transform: rotateY(180deg);
         -moz-transform: rotateY(180deg);
         transform: rotateY(180deg);  
-        
 
+    }
+
+    100% {
+        -webkit-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        transform: rotateY(0deg);
     }
     
 }
